@@ -1,0 +1,4 @@
+This is a generic text file with some text to be used by the text analyzer program for testing purposes.
+Do not read this line
+
+This line	is broken
