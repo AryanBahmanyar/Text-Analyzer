@@ -30,12 +30,12 @@ int main() {
     int lines = 0, words = 0, chars = 0;
     
     /* 
-    excludes carriage return (\r) since it's used with line feed (\n)
-    on Windows to represent a single newline (CRLF)
+    The following algorithm excludes carriage return (\r) since it's used
+    with line feed (\n) on Windows to represent a single newline (CRLF)
     
     Linux and modern Mac use only linefeed (LF), represented as '\n'
     
-    The following algorithm may cause an issue where lines will never be
+    may cause an issue where lines will never be
     incremented on older Mac systems, prior to OS X (introduced in 2001),
     where a newline is represented only by a carriage return (CR),
     represented as '\r'
