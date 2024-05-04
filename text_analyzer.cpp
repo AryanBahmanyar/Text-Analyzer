@@ -35,10 +35,9 @@ int main() {
     
     Linux and modern Mac use only linefeed (LF), represented as '\n'
     
-    may cause an issue where lines will never be
-    incremented on older Mac systems, prior to OS X (introduced in 2001),
-    where a newline is represented only by a carriage return (CR),
-    represented as '\r'
+    may cause an issue where lines will never be incremented on older Mac
+    systems, prior to OS X (introduced in 2001), where a newline is
+    represented only by a carriage return (CR), represented as '\r'
     */
     for (int i = 0; i < content.size(); i++) {
         if (content[i] == '\n') lines++;
